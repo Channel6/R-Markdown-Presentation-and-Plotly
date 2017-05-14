@@ -22,7 +22,7 @@ library(plotly)
 
 Showing a 3D scatterplot
 ========================================================
-
+## Using the trees dataset
 We will be using the trees dataset from R.
 ```{r echo=TRUE}
 names(trees)
@@ -48,9 +48,21 @@ plot_ly(trees, x=~Girth,y=~Volume,z=~Height,type="scatter3d",
 			zaxis = list(title = "Height", titlefont = f)
 		)
 	)
-#plot_ly(x=mtcars$wt,y=mtcars$mpg,z=mtcars$hp,type="scatter3d", 
-#        mode="markers", color=mtcars$wt)
 ```
 
 Initiating a bar graph
+========================================================
+## Using time series data
+From the ``austres`` dataset description:
+Quarterly Time Series of the Number of Australian Residents
+
+```{r echo=TRUE}
+library(datasets)
+data(austres)
+```
+
+## Format
+A quarterly timeseries of 89 values. Dates range from March 1971 to March 1994.
+
+Bar graph realized
 ========================================================
