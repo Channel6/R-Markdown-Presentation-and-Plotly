@@ -13,7 +13,7 @@ Create a web page presentation using R Markdown that features a plot created wit
 Plotly
 Can be installed with:
 ```{r echo=TRUE, eval=FALSE}
-install.packages("plotly"")
+install.packages("plotly")
 ```
 The source the library with:
 ```{r echo=TRUE}
@@ -34,6 +34,10 @@ z: Height
 Slide With Plot
 ========================================================
 
-```{r, echo=FALSE}
-plot(cars)
+```{r, echo=TRUE}
+library(plotly)
+#plot_ly(x=trees$Girth,y=trees$Volume,z=trees$Height,type="scatter3d", 
+#        mode="markers", color=trees$Girth)
+plot_ly(x=mtcars$wt,y=mtcars$mpg,z=mtcars$hp,type="scatter3d", 
+        mode="markers", color=mtcars$wt)
 ```

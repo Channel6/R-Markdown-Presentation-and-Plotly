@@ -14,7 +14,7 @@ Plotly
 Can be installed with:
 
 ```r
-install.packages("plotly"")
+install.packages("plotly")
 ```
 The source the library with:
 
@@ -41,4 +41,8 @@ z: Height
 Slide With Plot
 ========================================================
 
-![plot of chunk unnamed-chunk-4](PlotlyPresentation-figure/unnamed-chunk-4-1.png)
+
+
+```
+Error in loadNamespace(name) : there is no package called 'webshot'
+```
