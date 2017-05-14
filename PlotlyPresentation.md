@@ -38,7 +38,7 @@ x: Girth
 y: Volume
 z: Height
 
-Slide With Plot
+3D Scatterplot
 ========================================================
 
 
