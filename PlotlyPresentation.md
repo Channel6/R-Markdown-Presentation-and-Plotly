@@ -34,9 +34,11 @@ names(trees)
 ```
 [1] "Girth"  "Height" "Volume"
 ```
-x: Girth
-y: Volume
-z: Height
+
+x: Girth  
+y: Volume  
+z: Height  
+
 
 3D Scatterplot
 ========================================================
@@ -44,5 +46,5 @@ z: Height
 
 
 ```
-Error in loadNamespace(name) : there is no package called 'webshot'
+Error in file(con, "rb") : cannot open the connection
 ```
