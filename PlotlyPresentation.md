@@ -12,27 +12,20 @@ Create a web page presentation using R Markdown that features a plot created wit
 ## Required packages
 Plotly
 Can be installed with:
-
-```r
+```{r echo=TRUE, eval=FALSE}
 install.packages("plotly")
 ```
 The source the library with:
-
-```r
+```{r echo=TRUE}
 library(plotly)
 ```
 
 Showing a 3D scatterplot
 ========================================================
-
+## Using the trees dataset
 We will be using the trees dataset from R.
-
-```r
+```{r echo=TRUE}
 names(trees)
-```
-
-```
-[1] "Girth"  "Height" "Volume"
 ```
 
 x: Girth  
@@ -40,11 +33,22 @@ y: Volume
 z: Height  
 
 
-3D Scatterplot
+3D Scatterplot of tree data
 ========================================================
 
+```{r, echo=TRUE}
+library(plotly)
 
+plot_ly(trees, x=~Girth,y=~Volume,z=~Height,type="scatter3d", 
+        mode="markers", color=~Girth) %>%
+	layout(
+		scene = list(
+			xaxis = list(title="Girth"),
+			yaxis = list(title="Volume"),
+			zaxis = list(title = "Height", titlefont = f)
+		)
+	)
+```
 
-```
-Error in file(con, "rb") : cannot open the connection
-```
+Thank you
+========================================================
