@@ -50,19 +50,5 @@ plot_ly(trees, x=~Girth,y=~Volume,z=~Height,type="scatter3d",
 	)
 ```
 
-Initiating a bar graph
-========================================================
-## Using time series data
-From the ``austres`` dataset description:
-Quarterly Time Series of the Number of Australian Residents
-
-```{r echo=TRUE}
-library(datasets)
-data(austres)
-```
-
-## Format
-A quarterly timeseries of 89 values. Dates range from March 1971 to March 1994.
-
-Bar graph realized
+Thank you
 ========================================================
