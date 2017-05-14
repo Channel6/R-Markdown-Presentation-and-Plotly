@@ -33,13 +33,24 @@ y: Volume
 z: Height  
 
 
-3D Scatterplot
+3D Scatterplot of tree data
 ========================================================
 
 ```{r, echo=TRUE}
 library(plotly)
-#plot_ly(x=trees$Girth,y=trees$Volume,z=trees$Height,type="scatter3d", 
-#        mode="markers", color=trees$Girth)
-plot_ly(x=mtcars$wt,y=mtcars$mpg,z=mtcars$hp,type="scatter3d", 
-        mode="markers", color=mtcars$wt)
+
+plot_ly(trees, x=~Girth,y=~Volume,z=~Height,type="scatter3d", 
+        mode="markers", color=~Girth) %>%
+	layout(
+		scene = list(
+			xaxis = list(title="Girth"),
+			yaxis = list(title="Volume"),
+			zaxis = list(title = "Height", titlefont = f)
+		)
+	)
+#plot_ly(x=mtcars$wt,y=mtcars$mpg,z=mtcars$hp,type="scatter3d", 
+#        mode="markers", color=mtcars$wt)
 ```
+
+Initiating a bar graph
+========================================================
