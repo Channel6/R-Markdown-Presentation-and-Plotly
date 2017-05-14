@@ -34,7 +34,9 @@ names(trees)
 ```
 [1] "Girth"  "Height" "Volume"
 ```
-
+x: Girth
+y: Volume
+z: Height
 
 Slide With Plot
 ========================================================

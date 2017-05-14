@@ -27,7 +27,9 @@ We will be using the trees dataset from R.
 ```{r echo=TRUE}
 names(trees)
 ```
-
+x: Girth
+y: Volume
+z: Height
 
 Slide With Plot
 ========================================================
