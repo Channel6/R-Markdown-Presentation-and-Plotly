@@ -39,17 +39,16 @@ z: Height
 ```{r, echo=FALSE}
 library(datasets)
 library(plotly)
+library(magrittr)
 
 plot_ly(trees, x=~Girth,y=~Volume,z=~Height,type="scatter3d", 
-        mode="markers", color=~Girth)
-#%>%
-#	layout(
-#		scene = list(
-#	  	xaxis = list(title="Girth"),
-#			yaxis = list(title="Volume"),
-#			zaxis = list(title = "Height")
-#		)
-#	)
+        mode="markers", color=~Girth) %>% layout(
+		scene = list(
+	  	xaxis = list(title="Girth"),
+			yaxis = list(title="Volume"),
+			zaxis = list(title = "Height")
+		)
+	)
 ```
 
 Thank you
